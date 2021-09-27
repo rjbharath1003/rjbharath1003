@@ -2,7 +2,7 @@ from . import __version__ as app_version
 
 app_name = "erpnext_shipping"
 app_title = "Manage Shipping"
-app_publisher = "jb@pontuspack.com	"
+app_publisher = "jb"
 app_description = "Frappe"
 app_icon = "icon-book"
 app_color = "blue"
@@ -89,13 +89,11 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"Sales Order": {
+		"validate": "erpnext_shipping.manage_shipping.sales_order_custom.calculate_total_weight"
+	}
+}
 
 # Scheduled Tasks
 # ---------------
@@ -173,3 +171,6 @@ user_data_fields = [
 # 	"erpnext_shipping.auth.validate"
 # ]
 
+fixtures = [
+"Item"
+]

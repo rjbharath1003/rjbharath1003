@@ -11,10 +11,13 @@ erpnext_shipping.egg-info/PKG-INFO
 erpnext_shipping.egg-info/SOURCES.txt
 erpnext_shipping.egg-info/dependency_links.txt
 erpnext_shipping.egg-info/not-zip-safe
+erpnext_shipping.egg-info/requires.txt
 erpnext_shipping.egg-info/top_level.txt
 erpnext_shipping/config/__init__.py
 erpnext_shipping/config/desktop.py
 erpnext_shipping/config/docs.py
+erpnext_shipping/fixtures/item.json
 erpnext_shipping/manage_shipping/__init__.py
+erpnext_shipping/manage_shipping/sales_order_custom.py
 erpnext_shipping/templates/__init__.py
 erpnext_shipping/templates/pages/__init__.py

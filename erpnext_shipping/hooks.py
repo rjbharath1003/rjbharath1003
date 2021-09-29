@@ -171,7 +171,9 @@ user_data_fields = [
 # 	"erpnext_shipping.auth.validate"
 # ]
 
-fixtures = ["Property Setter", 
-
-
-{"doctype:Item, filters: [{module:Manage Shipping}]"} ]
+fixtures = ["Custom Field", "Client Script", 
+            "Naming Series", "Property Setter",
+            {"doctype": "DocType",
+                        "filters": { "custom" : ["=", "1"] }
+            }
+]

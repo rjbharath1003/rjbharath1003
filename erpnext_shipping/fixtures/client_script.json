@@ -1,0 +1,15 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Item",
+  "enabled": 1,
+  "modified": "2021-09-29 22:53:02.951517",
+  "name": "Item-Form",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "script": "frappe.ui.form.on('Item', {\n\trefresh: function(frm) {\n\t\t  \n            msgprint('You are only allowed Material Receipt');\n           \n        \n\t}\n})",
+  "view": "Form"
+ }
+]

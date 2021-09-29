@@ -171,6 +171,7 @@ user_data_fields = [
 # 	"erpnext_shipping.auth.validate"
 # ]
 
-fixtures = [
-"Item"
-]
+fixtures = ["Property Setter", 
+
+
+{"doctype:Item, filters: [{module:Manage Shipping}]"} ]
